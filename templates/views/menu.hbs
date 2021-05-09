@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<title>Menu</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">    
+<link type="text/css" rel="stylesheet" href="css/menustyle.css">
+<!--<script src="js/fetch.js"/>-->
+<body>
+        <center><h1>The Menu</h1></center>
+        <hr>
+		
+		<form action="/menu" method="post">
+        <div id="pizza">
+            <center><h2>Pizza</h2></center>
+			{{#each pizza}}
+ 			<div>
+				<div class="name">{{name}}
+				<div class="right">
+				<span class="price">{{price}}</span><br>
+			<select class="selectpicker" data-style="btn-info" name={{this.name}}>
+			<optgroup label="Select Quantity">
+				<option name="" value="0">0</option>
+				<option name="table1" value="1">1</option>
+				<option name="table2" value="2">2</option>
+				<option name="table3" value="3">3</option>
+			</optgroup>
+    	</select>
+		
+		</div>
+		<br>{{description}}
+		</div>
+ 			 </div><hr style="width:60%">
+			{{/each}}
+        </div>
+        <div id="pasta">
+            <center><h2>Pasta</h2></center>
+			{{#each pasta}}
+ 			<div>
+ 				 
+				<div class="name">{{name}}
+				<div class="right">
+				<span class="price">{{price}}</span><br>
+			<select class="selectpicker" data-style="btn-info" name={{this.name}}>
+			<optgroup label="Select Quantity">
+				<option name="" value="0">0</option>
+				<option name="table1" value="1">1</option>
+				<option name="table2" value="2">2</option>
+				<option name="table3" value="3">3</option>
+			</optgroup>
+    	</select>
+		
+		</div>
+		<br>{{description}}
+		</div>
+ 			 </div><hr style="width:60%">
+			{{/each}}
+        </div>
+        <div id="starters">
+            <center><h2>Starters</h2></center>
+			{{#each starters}}
+ 			<div>
+ 				 
+				<div class="name">{{name}}
+				<div class="right">
+				<span class="price">{{price}}</span><br>
+			<select class="selectpicker" data-style="btn-info" name={{this.name}}>
+			<optgroup label="Select Quantity">
+				<option name="" value="0">0</option>
+				<option name="table1" value="1">1</option>
+				<option name="table2" value="2">2</option>
+				<option name="table3" value="3">3</option>
+			</optgroup>
+    	</select>
+		
+		</div>
+		<br>{{description}}
+		</div>
+ 			 </div><hr style="width:60%">
+			{{/each}}
+        </div>
+		<input type="submit" value="Order" class="odr_btn">
+		</form>
+</body>
+</html>

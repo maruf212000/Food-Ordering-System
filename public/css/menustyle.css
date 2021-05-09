@@ -1,0 +1,62 @@
+body{
+    font-family: "Amatic SC", sans-serif;
+    background-color: black;
+    color: white;
+}
+h1{
+    font-size: 3em;
+}
+h2
+{
+    font-size: 2.5em;
+}
+.pizza{
+    text-align: center;
+}
+.name{
+    /*display: inline-block;*/
+    margin: 0 auto;
+    padding: 3px;
+    font-size: 1.7em;
+    width: 60%;
+}
+.price{
+    float: right;
+}
+select{
+    width:50px;
+    font-family:Cursive;
+    line-height:1;
+    border-radius:5px;
+    background-color:white;
+    color:black;
+    font-size:20px;
+    box-shadow:inset 0 0 10px 0 rgba(0,0,0,0.6);
+}
+.right{
+    float:right;
+}
+.odr_btn
+{
+  background-color: rgb(96, 96, 241); /* Green */
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  width: 100px;
+  cursor: pointer;
+  border-radius: 12px;
+  float: right;
+  position: relative;
+  right: 20%;
+}
+@media screen and(max-width:1024px)
+{
+.name{
+    width:100%;
+}
+}
