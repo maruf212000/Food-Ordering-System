@@ -10,7 +10,7 @@ require("./db/conn")
 const port= process.env.PORT || 3000;
 const Reserve=require("./models/reserve")
 const Register=require("./models/registers")
-const Order=require("./models/Order")
+const Order=require("./models/order")
 const Item=require("./models/menu");
 const { Session } = require("inspector");
 const static_path =path.join(__dirname,"../public")
